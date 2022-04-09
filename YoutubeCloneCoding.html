@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/930a3892f3.js" crossorigin="anonymous"></script>
+    <style>
+        @import url("YoutubeCloneCoding.css");
+    </style>
+</head>
+<body>
+    <header class = "navbar">
+        <ul class = "navbar_logo">
+            <li><i class="fa-solid fa-bars"></i></li>
+            <li class = "navbar_logo_youtube"><i class="fa-brands fa-youtube" style = "color : red"></i>Youtube</li>
+        </ul>
+        <ul class = "navbar_search">
+            <li><input class = "navbar_search_input" type = "text" value = "검색"></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-microphone"></i></li>
+        </ul>
+        <ul class = "navbar_menu">
+            <li><i class="fa-solid fa-video"></i></li>
+            <li><i class="fa-regular fa-chart-bar"></i></li>
+            <li><i class="fa-solid fa-bell"></i></li>
+            <li><i class="fa-regular fa-address-card"></i></li>
+        </ul>
+    </header>
+    <section class = "contents">
+        <div class = "videos"><video class = "contents_video" src = "bear.mp4" controls></video></div>
+        <div class = "contents_title">
+            클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+        </div>
+        <div class = "contents_hits">조회수<span class = "contents_hits_count"></span></div>
+    </section>
+    <hr>
+    <article>
+        <section class = "section1">
+            <section class = "info">
+                <ul class = "info_menu">
+                    <li class = "like_count"><i class = "fas fa-thumbs-up fa-2x"><div class = "info_menu_like">0</div></i></li>
+                    <li><i class = "fas fa-thumbs-down fa-2x"><div class = "info_menu_hate">싫어요</div></i></li>
+                    <li><i class = "fas fa-share fa-2x"><div class = "info_menu_share">공유</div></i></li>
+                    <li><i class = "fas fa-plus fa-2x"><div class = "info_menu_plus">save</div></i></li>
+                    <li><i class = "fas fa-font-awesome-flag fa-2x"><div class = "info_menu_report">report</div></i></li>
+                </ul>
+            </section>
+            <hr>
+            <section class = "profile">
+                <ul class = "profile_info">
+                    <li class = "profile_info2">
+                        <span class = "fa-stack fa-lg"><i class="fa-regular fa-circle fa-stack-2x"></i><i class="fa-regular fa-user fa-stack-1x"></i></span>
+                        <ul class = "profile_info_name">
+                            <li><div class = "profile_info_name_id"><strong>꾸물탕</strong></div><d></div></li>
+                            <li><div class = "profile_info_name_subscribers">123566</div><d></div></li>
+                        </ul>
+                    </li>
+                    <li><span class = "profile_info_subscribe">SUBSCRIBE</span></li>
+                </ul>
+            </section>
+        </section>
+        <hr>
+        <section class = "section2">
+            <section class = "upcoming">
+                <ul class = "upcoming_videos">
+                    <li><img class = "upcoming_videos_1st" src = "Desert.png"><span>Wanna go Dessert!</span></li>
+                    <li><img class = "upcoming_videos_2nd" src = "beach.png"><span>Wanna go Beach!</span></li>
+                    <li><img class = "upcoming_videos_3rd" src = "beach2.png"><span>Let's go Beach!</span>></li>
+                </ul>
+            </section>
+        </section>
+    </article>
+    <script src = "YoutubeCloneCoding.js"></script>
+</body>
+</html>

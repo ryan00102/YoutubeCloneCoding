@@ -1,0 +1,155 @@
+/*비디오 상단*/
+.navbar{
+    font-family: 'Oswald', sans-serif;
+    font-size : 18px;
+    display : flex;
+    background-color: black;
+    justify-content: space-between;
+    color : white;
+}
+.navbar_logo{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left : 12px;
+}
+.navbar_logo_youtube{
+    padding-left : 12px;
+}   
+.navbar_search{
+    display : flex;
+    flex-direction : row;
+    list-style-type : none;
+    padding-left : 0px;
+}
+.navbar_search li{
+    padding : 0px 12px;
+}
+.navbar_search_input{
+    display : flex;
+    background-color : black;
+    color : grey;
+    width : 256px;
+}
+.navbar_menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left : 0px;
+}
+.navbar_menu li{
+    padding-right: 12px;
+}
+/*비디오 설명부분*/
+article{
+    display : flex;
+    flex-direction: column;
+}
+.contents_video{
+    width : 100%;
+    height : 100%;
+    max-width: 1000px;
+}
+.videos{
+    display :flex;
+    background-color: black;
+    justify-content: center;
+}
+.contents_title{
+    font-size : 24px;
+    padding : 12px 18px;
+}
+/*비디오 부가정보*/
+.info{
+    display : flex;
+    justify-content : space-around;
+}
+.contents_hits{
+    padding: 6px 18px;
+    text-align : left;
+}
+.info_menu{
+    display : flex;
+    list-style-type: none;
+    flex-direction: row;
+    padding-left : 0px;
+    margin-right : 0px;
+    color : grey;
+    justify-content: space-around;
+    width : 100%;
+}
+.info_menu li{
+    font-size : 12px;
+    width : 40px;
+    height : 40px;
+}
+.info_menu li i{
+    padding-bottom : 12px;
+}
+.info_menu_like, .info_menu_hate, .info_menu_share, .info_menu_plus, .info_menu_report{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size : 14px;
+    padding-top: 4px;
+}
+.info_menu li:hover{
+    color : blue;
+}
+/*프로필*/
+.profile_info{
+    list-style-type : none;
+    display : flex;
+    padding-left : 0px;
+    justify-content: space-between;
+}
+.profile_info span{
+    display : flex;
+}
+.profile_info_name{
+    display : flex;
+}
+.profile_info_name{
+    list-style-type : none;
+    padding-left : 0px;
+    margin-left : 24px;
+}
+.profile_info2{
+    display : flex;
+    flex-direction : row;
+}
+.profile_info_name{
+    display : flex;
+    flex-direction: column;
+}
+.profile_info li ul{
+    display : flex;
+}
+.profile_info_subscribe{
+    color : red;
+    font-family: 'Oswald', sans-serif;
+    margin-right : 24px;
+}
+/*다음 동영상*/
+.upcoming{
+    display : flex;
+    flex-direction : column;
+}
+.upcoming li{
+    margin-bottom : 20px;
+}
+.upcoming img{
+    width : 200px;
+    height : 100px;
+}
+.upcoming_videos{
+    list-style-type: none;
+}
+@media screen and (max-width : 624px) {
+    .navbar_search_input{
+        display : none;
+    }
+}
+@media screen and (min-width : 728px) {
+    article{
+        flex-direction: row;
+    }
+}
